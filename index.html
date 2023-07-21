@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<title>DnD by Artem</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.square {
+  height: 500px;
+  width: 500px;
+  background-color: #555;
+}
+.photo {
+  width: 200px;
+}
+</style> 
+ 
+</head>
+
+<body>
+<h2>DnD</h2>
+<span id="big-photo"></span>
+<img onclick="open_photo('https://sun9-58.userapi.com/impg/yGla8HFe9mHdsN5ja0u1YapYSB6fdUOm4CHgiA/F2BuqhoSAbM.jpg?size=1280x856&quality=96&sign=d38fbbfa689b2bf8c72ad5212ae127ae&type=album')" class="photo" src=https://sun9-58.userapi.com/impg/yGla8HFe9mHdsN5ja0u1YapYSB6fdUOm4CHgiA/F2BuqhoSAbM.jpg?size=1280x856&quality=96&sign=d38fbbfa689b2bf8c72ad5212ae127ae&type=album">
+<script>
+function open_photo(photo) {
+  document.getElementById("big-photo").innerHTML =
+    ("<img onclick='close_photo()' style='position: absolute;' src='" + photo + "'>")
+}
+
+function close_photo() {
+  document.getElementById("big-photo").innerHTML = ""
+}
+
+</script>
+</body>
+</html>
